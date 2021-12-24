@@ -1,3 +1,5 @@
+import styles from "../../styles/Team.modules.css"
+
 const team = () => {
     return (
         <div>
