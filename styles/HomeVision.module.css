@@ -1,0 +1,69 @@
+.vision-mission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  /* margin-bottom: 2rem; */
+}
+
+.vision-mission-content {
+  display: flex;
+  background: #6c16e1;
+}
+
+.events-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background: white;
+  padding: 2rem 8rem;
+}
+
+.events-image h3 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.events-image img {
+  width: 300px;
+}
+
+.mask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #8e2de2 0%, #6a15e1 100%);
+  border-top-right-radius: 100px;
+}
+
+.vision-mission-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-bottom-left-radius: 100px;
+  background: white;
+  padding: 7rem 8rem;
+}
+
+.vision-mission-details h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.vision-mission-details p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}

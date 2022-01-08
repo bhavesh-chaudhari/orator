@@ -1,0 +1,23 @@
+.events-page-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(178.43deg, #4B00E0 1.34%, #6A15E1 48.32%, #8E2DE2 99.39%);;
+    color: white;
+}
+
+.heading h1{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.events-page-content{
+    width: 70%;
+    padding: 2rem 0;
+}
+
+.events div{
+    margin-bottom: 1rem;
+}

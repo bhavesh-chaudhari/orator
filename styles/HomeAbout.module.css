@@ -1,0 +1,69 @@
+.home-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.home-about-content {
+  display: flex;
+  background: #8e2de2;
+}
+
+.about-club {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-top-right-radius: 100px;
+  background: white;
+  padding: 7rem 8rem;
+}
+
+.about-club h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.about-club p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.members-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(180deg, #8e2de2 0%, #6a15e1 100%);
+  background: white;
+  position: relative;
+  padding: 2rem 8rem;
+}
+
+.mask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #8e2de2 0%, #6a15e1 100%);
+  border-bottom-left-radius: 100px;
+}
+
+.members-image h3 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
+}
+
+.members-image img {
+  width: 300px;
+}

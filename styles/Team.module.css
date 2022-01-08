@@ -1,0 +1,29 @@
+.team-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.team-container .heading{
+    margin-bottom: 2rem;
+}
+
+.team-container .heading h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.team-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.team-cards > div{
+    margin: 1rem;
+}
