@@ -9,8 +9,14 @@ const HomeEvents = () => {
             <h1>Events</h1>
           </div>
           <div>
-            <Event buttonName="Register" ></Event>
-            <Event pb="8rem" borderBottomLeftRadius="100px" buttonName="Register" flexDirection="row-reverse" ></Event>
+            <Event background="#8E2DE2" buttonName="Register"></Event>
+            <Event
+              background="#8E2DE2"
+              pb="8rem"
+              borderBottomLeftRadius="100px"
+              buttonName="Register"
+              flexDirection="row-reverse"
+            ></Event>
           </div>
         </div>
       </div>

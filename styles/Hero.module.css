@@ -1,6 +1,6 @@
-.hero-container img{
-    width: 100hw;
-    height: 92vh;
+.hero-container{
+    width: 100%;
+    background: red;
 }
 
 /* 

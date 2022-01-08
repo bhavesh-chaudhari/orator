@@ -1,0 +1,14 @@
+.editor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.editor-container input{
+    margin-bottom: 2rem;
+}
+
+.editor-container button{
+    margin-top: 2rem;
+}

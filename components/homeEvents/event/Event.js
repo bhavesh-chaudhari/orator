@@ -1,7 +1,7 @@
 import styles from "../../../styles/HomeEvent.module.css";
 
 const Event = (props) => {
-  const { flexDirection, buttonName, borderBottomLeftRadius, pb } = props;
+  const { flexDirection, buttonName, borderBottomLeftRadius, pb, background } = props;
 
   return (
     <div
@@ -9,6 +9,7 @@ const Event = (props) => {
         flexDirection: flexDirection,
         borderBottomLeftRadius: borderBottomLeftRadius,
         paddingBottom: pb,
+        background: background
       }}
       className={styles["home-event"]}
     >

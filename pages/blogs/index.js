@@ -1,6 +1,9 @@
 import Head from "next/head"
+import UserProfile from "../../components/userProfile/UserProfile";
 
 const index = () => {
+
+
     return (
       <>
       <Head>
@@ -8,6 +11,7 @@ const index = () => {
       </Head>
         <div>
           <h1>Blogs</h1>
+          <UserProfile></UserProfile>
         </div>
       </>
     );
