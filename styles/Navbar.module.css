@@ -8,6 +8,10 @@
     height: 8vh;
     min-height: 65px;
     font-family: "Open Sans", sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 8px 5px -8px #000
 }
 
 .navbar{

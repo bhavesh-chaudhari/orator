@@ -17,11 +17,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   text-align: center;
   position: relative;
   background: white;
-  padding: 2rem 8rem;
+  width: 50%;
 }
 
 .events-image h3 {
@@ -51,10 +50,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
   border-bottom-left-radius: 100px;
   background: white;
-  padding: 7rem 8rem;
+  padding: 5rem 8rem;
+  width: 50%;
 }
 
 .vision-mission-details h2 {
@@ -66,4 +65,75 @@
 .vision-mission-details p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .vision-mission-content {
+    min-width: 700px;
+  }
+  .vision-mission-details {
+    padding: 2rem;
+    width: 50%;
+  }
+  .events-image img {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .vision-mission-details {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .vision-mission-container {
+    margin-bottom: 2.5rem;
+  }
+  .vision-mission-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    background: white;
+    min-width: 300px;
+  }
+  .vision-mission-details {
+    border-top-right-radius: 0px;
+    width: 80%;
+  }
+  .events-image {
+    width: 80%;
+  }
+  .mask {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    padding: 1rem;
+  }
+  .events-image img {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .vision-mission-details h2 {
+    font-weight: lighter;
+  }
+  .vision-mission-details p {
+    font-size: 1rem;
+  }
+  .events-image img {
+    width: 150px !important;
+  }
+  .vision-mission-details {
+    width: 90%;
+  }
+  .events-image{
+    height: 280px;
+  }
+  .events-image h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
 }

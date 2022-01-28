@@ -12,7 +12,7 @@ const UserProfile = () => {
     <div className={styles["user-profile-container"]}>
       {user ? (
         <>
-          <Image loader={() => src} src={src} width={200} height={200}></Image>
+          <Image loader={() => src} src={src} width={200} height={200} alt="user profile image" ></Image>
           <p>{user.displayName}</p>
           <button onClick={logout}>Logout</button>
           <br />

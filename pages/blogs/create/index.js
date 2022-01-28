@@ -11,4 +11,6 @@ const index = () => {
     )
 }
 
-export default withAuth(index);
+// export default withAuth(index);
+export default index;
+

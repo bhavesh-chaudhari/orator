@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../../styles/Team.module.css";
 import TeamCard from "../../components/teamCard/TeamCard";
 
-import teamData from "./teamData";
+import teamData from "../../components/teamCard/teamData";
 
 const team = () => {
   return (

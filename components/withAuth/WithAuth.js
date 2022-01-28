@@ -2,25 +2,23 @@ import {useRouter } from "next/router";
 import { useGlobalContext } from "../../context/appContext";
 
 const withAuth = (WrappedComponent) =>{
-
     
-    return (props)=>{
-        if(typeof window !== "undefined"){
-            const Router = useRouter()
+    // return (props)=>{
+    //     if(typeof window !== "undefined"){
+    //         const Router = useRouter()
 
-            const {user} = useGlobalContext()
-
+    //         const {user} = useGlobalContext()
             
-            if(!user){
-                Router.replace("/blogs")
-                return null
-            }
+    //         if(!user){
+    //             Router.replace("/blogs")
+    //             return null
+    //         }
 
-            return <WrappedComponent {...props} />
-        }
+    //         return <WrappedComponent {...props} />
+    //     }
 
-        return null;
-    }
+    //     return null;
+    // }
 }
 
 export default withAuth;

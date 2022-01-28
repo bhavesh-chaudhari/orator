@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className={styles["navbar-container"]}>
         <nav className={styles["navbar"]}>
           <div className={styles["nav-logo"]}>
-            <Image src="/images/navbar/logo.png" width={50} height={50}></Image>
+            <Image src="/images/navbar/navlogo.png" alt="Navbar Logo" width={50} height={50}></Image>
           </div>
           <div
             onClick={() => setShow((prevState) => !prevState)}
@@ -50,11 +50,11 @@ const Navbar = () => {
               >
                 <Link href="/team">Team</Link>
               </li>
-              <li
+              {/* <li
                 className={router.pathname == "/blogs" ? styles["active"] : ""}
               >
                 <Link href="/blogs">Blog</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>

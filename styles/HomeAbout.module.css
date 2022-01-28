@@ -15,10 +15,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
   border-top-right-radius: 100px;
   background: white;
-  padding: 7rem 8rem;
+  padding: 5rem 8rem;
+  width: 50%;
 }
 
 .about-club h2 {
@@ -37,12 +37,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   text-align: center;
   background: linear-gradient(180deg, #8e2de2 0%, #6a15e1 100%);
   background: white;
   position: relative;
-  padding: 2rem 8rem;
+  width: 50%;
 }
 
 .mask {
@@ -66,4 +65,74 @@
 
 .members-image img {
   width: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-about-content{
+    min-width: 700px;
+  }
+  .about-club{
+    padding: 2rem;
+    width: 50%;
+  }
+  .members-image img{
+    width: 250px !important;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about-club{
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .home-about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    min-width: 300px;
+  }
+  .about-club{
+    border-top-right-radius: 0px;
+    width: 80%;
+  }
+  .members-image{
+    width: 100%;
+    width: 80%;
+  }
+  .mask{
+    position: relative;
+    border-radius: 0px;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .members-image img{
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-club{
+    width: 90%;
+  }
+  .about-club h2{
+    font-weight: lighter;
+  }
+  .about-club p{
+    font-size: 1rem;
+  }
+  .members-image{
+    height: 280px;
+  }
+  .members-image img{
+    width: 150px !important;
+  }
+  .members-image h3{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
 }

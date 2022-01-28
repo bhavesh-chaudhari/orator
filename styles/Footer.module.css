@@ -1,0 +1,154 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #4b00e0 0%, #4b00e0 100%);
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 1rem;
+  background: #6c16e1;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 70%;
+  position: relative;
+  min-width: 750px;
+}
+
+.footer-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  padding: 1rem 2rem;
+}
+
+.user-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.user-input label {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.user-input input,
+.user-input textarea {
+  width: 80%;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.user-input input:focus,
+.user-input textarea:focus {
+  outline: 1px solid #fdfdfd;
+}
+
+.user-input textarea {
+  height: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  width: 48%;
+  padding: 1rem 2rem;
+}
+
+.link {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link a span {
+  margin-left: 0.5rem;
+}
+
+.vertical-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #fdfdfd;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+
+.footer-form form {
+  position: relative;
+}
+
+.footer-form button {
+  position: absolute;
+  background: #ffffff;
+  color: #6c16e1;
+  right: 0;
+  bottom: 0;
+  border: none;
+  outline: none;
+  padding: 5px 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+  .user-input input,
+  .user-input textarea {
+    width: 72%;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+    .footer-container{
+        padding: 1rem 1rem;
+    }
+    .footer-content{
+        flex-direction: column;
+        min-width: 300px;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .vertical-line{
+        display: none;
+    }
+    .footer-form{
+        width: 100%;
+    }
+    .footer-links{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .footer-content{
+        align-items: flex-start;
+    }
+    .user-input input, .user-input textarea{
+        min-width: 200px;
+    }    
+    .footer-form, .footer-links{
+        padding: 0;
+    }
+    .footer-form{
+        margin-bottom: 1.5rem;
+    }
+}

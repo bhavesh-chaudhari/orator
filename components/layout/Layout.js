@@ -1,4 +1,5 @@
 import Navbar from "../navbar/Navbar"
+import Footer from "../footer/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -19,6 +20,7 @@ const Layout = ({children}) => {
               draggable
               pauseOnHover
             ></ToastContainer>
+            <Footer></Footer>
           </div>
     );
 }

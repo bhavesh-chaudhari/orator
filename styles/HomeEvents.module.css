@@ -1,7 +1,7 @@
 .home-events {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   /* background: #8E2DE2; */
   font-family: "Open Sans", sans-serif;
   color: white;
@@ -14,7 +14,31 @@
 }
 
 .home-events-content h1 {
-  font-family: "Libre Baskerville", sans-serif;
-  font-weight: 400;
+  /* font-family: "Libre Baskerville", sans-serif; */
+  font-weight: 600;
   font-size: 3rem;
+}
+
+.events > div:nth-child(2) {
+  padding-bottom: 8rem;
+  border-bottom-left-radius: 100px;
+}
+
+@media screen and (max-width: 720px) {
+  .events > div:nth-child(2) {
+    border-bottom-left-radius: 0px;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .home-events-content .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .home-events-content h1 {
+    font-size: 2.5rem;
+  }
 }

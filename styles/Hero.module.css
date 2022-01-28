@@ -1,9 +1,12 @@
 .hero-container{
     width: 100%;
     background: red;
+    margin-top: 65px;
 }
 
-/* 
-caraousel
-*/
 
+@media screen and (max-width: 650px) {
+    .hero-container{
+        margin-top: 60px;
+    }
+}
