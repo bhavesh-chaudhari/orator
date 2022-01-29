@@ -17,6 +17,7 @@ const Footer = () => {
     fetch("/api/mail", {
       method: "post",
       body: JSON.stringify(feedback),
+      
     });
   };
 
