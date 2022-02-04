@@ -30,6 +30,8 @@
 .about-club p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  line-height: 1.8rem;
+  font-weight: 400;
 }
 
 .members-image {
@@ -120,7 +122,7 @@
     width: 90%;
   }
   .about-club h2{
-    font-weight: lighter;
+    font-size: 1.5rem;
   }
   .about-club p{
     font-size: 1rem;

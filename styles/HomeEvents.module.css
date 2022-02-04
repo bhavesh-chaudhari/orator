@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #8E2DE2; */
   font-family: "Open Sans", sans-serif;
   color: white;
   overflow: hidden;
@@ -14,9 +13,8 @@
 }
 
 .home-events-content h1 {
-  /* font-family: "Libre Baskerville", sans-serif; */
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .events > div:nth-child(2) {
@@ -24,10 +22,13 @@
   border-bottom-left-radius: 100px;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1200px) {
+  .home-events-content .heading{
+    padding: 2rem;
+  }
   .events > div:nth-child(2) {
-    border-bottom-left-radius: 0px;
     padding-bottom: 2rem;
+    border-bottom-left-radius: 0px;
   }
 }
 

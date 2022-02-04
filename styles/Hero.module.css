@@ -1,12 +1,20 @@
 .hero-container{
     width: 100%;
-    background: red;
     margin-top: 65px;
+    background: #060017;
+    position: relative;
+    min-height: 92vh;
 }
 
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
     .hero-container{
         margin-top: 60px;
+        min-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-container{
+        min-height: 35vh;
     }
 }

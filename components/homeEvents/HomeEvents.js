@@ -1,5 +1,6 @@
 import styles from "../../styles/HomeEvents.module.css";
 import Event from "./event/Event";
+import homeEvents from "./homeEventsData";
 
 const HomeEvents = () => {
   return (
@@ -9,12 +10,11 @@ const HomeEvents = () => {
           <h1>Events</h1>
         </div>
         <div className={styles["events"]}>
-          <Event background="#8E2DE2" buttonName="Register"></Event>
-          <Event
-            background="#8E2DE2"
-            buttonName="Register"
-            flexDirection="row-reverse"
-          ></Event>
+          {
+            homeEvents.map(event=>{
+              return <Event id={event.id} {...event} ></Event>
+            })
+          }
         </div>
       </div>
     </div>

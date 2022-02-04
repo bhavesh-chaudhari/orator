@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 2rem 8rem;
   min-width: 700px;
 }
@@ -25,6 +25,8 @@
 .event-desc p {
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
 }
 
 .event-desc button {
@@ -42,19 +44,27 @@
   justify-content: center;
   align-items: center;
   min-height: 100px;
-  background: white;
+  background: #8e2de2;
   width: 48%;
   border-radius: 25px;
-  height: 300px;
+  height: 380px;
 }
 
-@media screen and (max-width: 950px) {
-  .home-event {
-    padding: 2rem 3rem;
+.home-event .event-image .image{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-event{
+    padding: 2rem;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .home-event {
     flex-direction: column !important;
     padding: 1rem;
@@ -70,16 +80,14 @@
     width: 90%;
     padding: 0;
   }
-  .event-desc h2{
-      font-weight: lighter;
+  .event-desc h2 {
+    font-size: 1.5rem;
   }
   .event-desc p {
     margin-bottom: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
     font-size: 1rem;
   }
-  .home-event .event-image{
-      width: 90%;
+  .home-event .event-image {
+    width: 90%;
   }
 }

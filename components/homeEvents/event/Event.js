@@ -1,29 +1,33 @@
+import Image from "next/image";
 import styles from "../../../styles/HomeEvent.module.css";
 
 const Event = (props) => {
-  const { flexDirection, buttonName, background, hasButton } = props;
+  const { flexDirection, buttonName, background, hasButton, src, eventName, eventDetails } = props;
 
   return (
     <div
       style={{
         flexDirection: flexDirection,
-        background: background
+        background: background,
       }}
       className={styles["home-event"]}
     >
       <div className={styles["event-desc"]}>
-        <h2>Event Name</h2>
+        <h2>{eventName}</h2>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever
-          since the 1500s.Lorem Ipsum has been the industry&apos;s standard dummy
-          text ever since the 1500s.
+          {eventDetails}
         </p>
-        {
-          hasButton ? <button>{buttonName}</button> : null
-        }
+        {hasButton ? <button>{buttonName}</button> : null}
       </div>
-      <div className={styles["event-image"]}></div>
+      <div className={styles["event-image"]}>
+        <div className={styles["image"]}>
+          {
+            src ? <Image layout="fill" alt="Event Image" src={src} >
+
+          </Image> : null
+          }
+        </div>
+      </div>
     </div>
   );
 };

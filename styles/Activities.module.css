@@ -1,0 +1,48 @@
+.activities-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    178.43deg,
+    #4b00e0 1.34%,
+    #6a15e1 48.32%,
+    #8e2de2 99.39%
+  );
+  color: white;
+  margin-top: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.heading{
+  margin: 3rem 0;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.activities-page-content {
+  width: 90%;
+  padding: 2rem 0;
+}
+
+.events div {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+  .activities-page-container{
+    margin-top: 30px;
+  }
+  .heading{
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .heading h1{
+    font-size: 1.5rem;
+    text-align: start;
+  }
+}

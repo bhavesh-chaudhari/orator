@@ -3,7 +3,6 @@ import UserProfile from "../../components/userProfile/UserProfile";
 
 const index = () => {
 
-
     return (
       <>
       <Head>

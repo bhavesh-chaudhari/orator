@@ -28,16 +28,18 @@ const Hero = () => {
     <div className={styles["hero-container"]}>
       <Slider {...settings}>
         <Image
-          width="1600px"
-          height="710px"
+          // width="1600px"
+          // height="710px"
           src="/images/hero/hero2.png"
           alt="heroImage"
+          layout="fill"
         />
         <Image
-          width="1600px"
-          height="710px"
+          // width="1600px"
+          // height="710px"
           src="/images/hero/hero1.png"
           alt="heroImage"
+          layout="fill"
         />
       </Slider>
     </div>

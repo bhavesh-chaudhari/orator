@@ -65,6 +65,8 @@
 .vision-mission-details p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  line-height: 1.8rem;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1200px) {
@@ -118,7 +120,7 @@
 
 @media screen and (max-width: 500px) {
   .vision-mission-details h2 {
-    font-weight: lighter;
+    font-size: 1.5rem;
   }
   .vision-mission-details p {
     font-size: 1rem;
@@ -129,7 +131,7 @@
   .vision-mission-details {
     width: 90%;
   }
-  .events-image{
+  .events-image {
     height: 280px;
   }
   .events-image h3 {
