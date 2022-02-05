@@ -32,19 +32,19 @@ const mail = async (req, res) => {
           if (error) {
             console.log(error);
           } else {
-            res.status(200).json({ message: "email has been sent" });
+            console.log("bhavesh is lol")
             console.log("Email sent: " + success.response);
+            res.status(200).json({ message: "email has been sent" });
           }
         }
       );
-
-      res.status(200).json({ message: userFeedback });
-      return
     }
   } catch (error) {
     console.log(error);
     res.status(404).json({ message: req.body });
   }
+
+  res.status(200).json({message: process.env.EMAIL})
 };
 
 export default mail;
