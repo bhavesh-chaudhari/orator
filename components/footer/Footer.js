@@ -37,8 +37,8 @@ const Footer = () => {
         body: JSON.stringify(feedback),
       })
         .then((res) => {
-          console.log(res);
           if(res.status === 200){
+            console.log(res);
             console.log("message sent")
             setIsLoading(false);
             setIsSuccess(true);

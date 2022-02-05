@@ -19,6 +19,7 @@ const mail = async (req, res) => {
     });
 
     // send mail with defined transport object
+    console.log(process.env.EMAIL)
     if(userFeedback){
       transporter.sendMail(
         {
