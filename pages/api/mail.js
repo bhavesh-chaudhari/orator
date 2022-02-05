@@ -9,42 +9,47 @@ const mail = async (req, res) => {
         <p><strong>Email: </strong> ${userFeedback?.email} </p><br>
         <p><strong>Message: </strong> ${userFeedback?.message} </p><br>`
 
-  try {
-    let transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL, // generated ethereal user
-        pass: process.env.PASSWORD, // generated ethereal password
-      },
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.EMAIL, // generated ethereal user
+      pass: process.env.PASSWORD, // generated ethereal password
+    },
+  });
+
+  await new Promise((resolve, reject)=>{
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log("Server is ready to take our messages");
+        resolve(success);
+      }
     });
+  })
 
-    // send mail with defined transport object
-    console.log(process.env.EMAIL)
-    if(userFeedback){
-      transporter.sendMail(
-        {
-          from: `"Orator Website" <${process.env.EMAIL}>`,
-          to: `${process.env.EMAIL}`,
-          subject: `Feedback form submission by ${userFeedback?.name}`,
-          html: output,
-        },
-        (error, success) => {
-          if (error) {
-            console.log(error);
-          } else {
-            console.log("bhavesh is lol")
-            console.log("Email sent: " + success.response);
-            res.status(200).json({ message: "email has been sent" });
-          }
-        }
-      );
-    }
-  } catch (error) {
-    console.log(error);
-    res.status(404).json({ message: req.body });
-  }
+  const mailData = {
+            from: `"Orator Website" <${process.env.EMAIL}>`,
+            to: `${process.env.EMAIL}`,
+            subject: `Feedback form submission by ${userFeedback?.name}`,
+            html: output,
+  };
 
-  res.status(200).json({message: process.env.EMAIL})
+  await new Promise((resolve, reject)=>{
+    transporter.sendMail(mailData, (err, info)=>{
+      if(err){
+        console.log(err)
+        reject(err)
+      }
+      else{
+        console.log(info)
+        resolve(info)
+      }
+    })
+  })
+
+  res.status(200).json({status: "OK"})
 };
 
 export default mail;
