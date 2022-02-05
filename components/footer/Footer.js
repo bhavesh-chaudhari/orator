@@ -38,8 +38,11 @@ const Footer = () => {
       })
         .then((res) => {
           console.log(res);
-          setIsLoading(false);
-          setIsSuccess(true);
+          if(res.status === 200){
+            console.log("message sent")
+            setIsLoading(false);
+            setIsSuccess(true);
+          }
         })
         .catch((error) => {
           console.log(error);
