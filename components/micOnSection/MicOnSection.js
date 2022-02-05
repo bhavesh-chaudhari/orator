@@ -49,7 +49,7 @@ const MicOnSection = () => {
                 src="/images/micOn/shreeshBharadwaj.png"
               ></Image>
             </div>
-            <p>Himanshu Rai</p>
+            <p>Shreesh Bharadwaj</p>
           </div>
         </div>
       </div>
