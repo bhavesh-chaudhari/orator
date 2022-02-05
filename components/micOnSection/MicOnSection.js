@@ -5,29 +5,46 @@ const MicOnSection = () => {
   return (
     <div className={styles["mic-on-container"]}>
       <div className={styles["content"]}>
-        <div className={styles["wrapper"]}>
+        <div
+          data-aos="fade-up"
+          data-aos-duration={1000}
+          className={styles["wrapper"]}
+        >
           <h3>Star Speakers</h3>
           <div className={styles["participant"]}>
             <div className={styles["image"]}>
-              <Image layout="fill" src="/images/micOn/abhinavAnand.png"></Image>
+              <Image
+                alt="star speaker image"
+                layout="fill"
+                src="/images/micOn/abhinavAnand.png"
+              ></Image>
             </div>
             <p>Abhinav Anand</p>
           </div>
           <div className={styles["participant"]}>
             <div className={styles["image"]}>
-              <Image layout="fill" src="/images/micOn/kushagraRai.png"></Image>
+              <Image
+                alt="star speaker image"
+                layout="fill"
+                src="/images/micOn/kushagraRai.png"
+              ></Image>
             </div>
             <p>Kushagra Rai</p>
           </div>
           <div className={styles["participant"]}>
             <div className={styles["image"]}>
-              <Image layout="fill" src="/images/micOn/himanshuRai.png"></Image>
+              <Image
+                alt="star speaker image"
+                layout="fill"
+                src="/images/micOn/himanshuRai.png"
+              ></Image>
             </div>
             <p>Himanshu Rai</p>
           </div>
           <div className={styles["participant"]}>
             <div className={styles["image"]}>
               <Image
+                alt="star speaker image"
                 layout="fill"
                 src="/images/micOn/shreeshBharadwaj.png"
               ></Image>

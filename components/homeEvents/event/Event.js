@@ -19,7 +19,7 @@ const Event = (props) => {
         </p>
         {hasButton ? <button>{buttonName}</button> : null}
       </div>
-      <div className={styles["event-image"]}>
+      <div data-aos="zoom-in" data-aos-duration={1000} data-aos-once={true} className={styles["event-image"]}>
         <div className={styles["image"]}>
           {
             src ? <Image layout="fill" alt="Event Image" src={src} >

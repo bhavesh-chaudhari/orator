@@ -74,7 +74,7 @@
     width: 85%;
   }
   .heading {
-    margin: 2rem 0;
+    margin-top: 1rem;
   }
   .heading h1 {
     font-size: 1.5rem;
@@ -82,5 +82,8 @@
   }
   .events div {
     width: 100% !important;
+  }
+  .events div h2{
+    font-size: 1.2rem;
   }
 }

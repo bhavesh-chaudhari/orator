@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "../../styles/Footer.module.css";
+import { css } from "@emotion/react";
+import { PulseLoader } from "react-spinners";
 
 const Footer = () => {
   const initialValues = {
@@ -10,15 +12,44 @@ const Footer = () => {
   };
 
   const [feedback, setFeedback] = useState(initialValues);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const validateEmail = (someEmail) => {
+    return String(someEmail)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(feedback);
-    fetch("/api/mail", {
-      method: "post",
-      body: JSON.stringify(feedback),
-      
-    });
+    setIsLoading(true);
+
+    if (
+      validateEmail(feedback.email) &&
+      feedback.name != "" &&
+      feedback.message != ""
+    ) {
+      fetch("/api/mail", {
+        method: "post",
+        body: JSON.stringify(feedback),
+      })
+        .then((res) => {
+          console.log(res);
+          setIsLoading(false);
+          setIsSuccess(true);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    } else {
+      console.log("message not valid");
+      setIsLoading(false);
+    }
+
+    setFeedback("");
   };
 
   return (
@@ -30,34 +61,72 @@ const Footer = () => {
             <div className={styles["user-input"]}>
               <label htmlFor="name">Name</label>
               <input
+                autoComplete="off"
                 onChange={(e) =>
                   setFeedback({ ...feedback, name: e.target.value })
                 }
                 type="text"
                 id="name"
+                spellCheck={false}
               />
             </div>
             <div className={styles["user-input"]}>
               <label htmlFor="email">Email</label>
               <input
+                autoComplete="off"
                 onChange={(e) =>
                   setFeedback({ ...feedback, email: e.target.value })
                 }
                 type="email"
                 id="email"
+                spellCheck={false}
               />
             </div>
             <div className={styles["user-input"]}>
               <label htmlFor="message">Message</label>
               <textarea
+                autoComplete="off"
                 onChange={(e) =>
                   setFeedback({ ...feedback, message: e.target.value })
                 }
                 name="message"
                 id="message"
+                spellCheck={false}
               ></textarea>
             </div>
-            <button>Send</button>
+            <button
+              className={
+                validateEmail(feedback.email) &&
+                feedback.name != "" &&
+                feedback.message != ""
+                  ? styles["btn"]
+                  : `${styles["btn"]} ${styles["muted"]}`
+              }
+              disabled={isSuccess ? true : false}
+            >
+              {isLoading ? (
+                <PulseLoader color="#6c16e1" size={8}></PulseLoader>
+              ) : (
+                <>
+                  {isSuccess ? (
+                    <>
+                      Sent&nbsp;
+                      <span
+                        style={{
+                          fontSize: "20px",
+                          color: "#6c16e1",
+                          marginBottom: "3px",
+                        }}
+                      >
+                        &#10003;
+                      </span>
+                    </>
+                  ) : (
+                    <>Send</>
+                  )}
+                </>
+              )}
+            </button>
           </form>
         </div>
         <div className={styles["vertical-line"]}></div>

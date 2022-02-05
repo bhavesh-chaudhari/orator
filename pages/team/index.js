@@ -14,7 +14,11 @@ const team = () => {
         <div className={styles["heading"]}>
           <h1>Our Team</h1>
         </div>
-        <div className={styles["team-cards"]}>
+        <div
+          data-aos="fade-up"
+          data-aos-duration={500}
+          className={styles["team-cards"]}
+        >
           {teamData.map((member) => {
             return <TeamCard key={member.id} {...member}></TeamCard>;
           })}

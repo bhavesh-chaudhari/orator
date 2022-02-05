@@ -13,7 +13,11 @@ const events = () => {
       </Head>
       <div className={styles["activities-page-container"]}>
         <div className={styles["activities-page-content"]}>
-          <div className={styles["page-header"]}>
+          <div
+            data-aos="zoom-in"
+            data-aos-duration={500}
+            className={styles["page-header"]}
+          >
             <h1>Activities</h1>
           </div>
           <div className={styles["heading"]}>

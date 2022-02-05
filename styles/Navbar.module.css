@@ -21,10 +21,12 @@
     width: 90%;
 }
 
-.navbar > div:nth-child(1){
+.nav-logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #0b0126;
+    border-radius: 50%;
 }
 
 .nav-links{

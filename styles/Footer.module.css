@@ -95,7 +95,7 @@
   position: relative;
 }
 
-.footer-form button {
+.btn {
   position: absolute;
   background: #ffffff;
   color: #6c16e1;
@@ -107,6 +107,18 @@
   font-size: 1rem;
   cursor: pointer;
   border-radius: 3px;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.5s ease;
+  opacity: 1 !important;
+}
+
+.btn.muted{
+  opacity: 0.8 !important;
+  cursor: not-allowed !important;
 }
 
 @media screen and (max-width: 1200px) {

@@ -43,7 +43,6 @@ const TeamCard = (props) => {
     >
       <div
         ref={card}
-        onMouseOver={() => console.log("hovering")}
         className={styles["card"]}
       >
         <div className={styles["front"]}>

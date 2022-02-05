@@ -3,7 +3,7 @@ import styles from "../../styles/VideoContainer.module.css";
 
 const VideoContainer = () => {
   return (
-    <div className={styles["video-container"]}>
+    <div data-aos="fade-up" data-aos-duration={500} className={styles["video-container"]}>
       <div className={styles["video"]}>
         <ReactPlayer
           width="100%"
@@ -22,8 +22,8 @@ const VideoContainer = () => {
         <p>
           We, at Orator Club, are pleased to announce that on 28th January 2022
           we have completed exactly one year since the inception of the Orator
-          Club. The journey we've had has been quite an oxymoron, i.e., it's
-          been a short journey, yet at the same time, we've come a long way from
+          Club. The journey we&apos;ve had has been quite an oxymoron, i.e., it&apos;s
+          been a short journey, yet at the same time, we&apos;ve come a long way from
           where we were on Day 1.
         </p>
         <p>
