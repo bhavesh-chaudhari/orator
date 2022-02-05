@@ -1,5 +1,5 @@
 import Head from "next/head"
-import UserProfile from "../../components/userProfile/UserProfile";
+// import UserProfile from "../../components/userProfile/UserProfile";
 
 const index = () => {
 
@@ -10,7 +10,7 @@ const index = () => {
       </Head>
         <div>
           <h1>Blogs</h1>
-          <UserProfile></UserProfile>
+          {/* <UserProfile></UserProfile> */}
         </div>
       </>
     );
