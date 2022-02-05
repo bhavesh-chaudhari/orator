@@ -6,7 +6,7 @@ const VideoContainer = () => {
     <div className={styles["video-container"]}>
       <div className={styles["video"]}>
         <ReactPlayer
-          width="95%"
+          width="100%"
           height="100%"
           color="blue"
           controls={true}

@@ -44,10 +44,8 @@
   justify-content: center;
   align-items: center;
   min-height: 100px;
-  background: #8e2de2;
   width: 48%;
   border-radius: 25px;
-  height: 380px;
 }
 
 .home-event .event-image .image{
@@ -56,6 +54,7 @@
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
+  min-height: 380px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -64,11 +63,11 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .home-event {
     flex-direction: column !important;
     padding: 1rem;
-    min-width: 300px;
+    min-width: 95%;
     align-items: center;
     justify-content: center;
   }

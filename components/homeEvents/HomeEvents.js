@@ -12,7 +12,7 @@ const HomeEvents = () => {
         <div className={styles["events"]}>
           {
             homeEvents.map(event=>{
-              return <Event id={event.id} {...event} ></Event>
+              return <Event key={event.id} {...event} ></Event>
             })
           }
         </div>

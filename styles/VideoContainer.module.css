@@ -1,18 +1,16 @@
 .video-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: stretch;
-    background: white;
-    color: black;
-    padding: 2rem;
     border-radius: 10px;
 }
 
 .video{
-    width: 50%;
+    width: 48%;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 380px;
 }
 
 .video > div{
@@ -21,8 +19,11 @@
 }
 
 .details{
-    width: 50%;
-    padding: 1rem;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .details p{
@@ -32,16 +33,9 @@
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1100px) {
-    .video-container{
-        padding: 0.5rem 1rem;
-    }
-}
-
 @media screen and (max-width: 900px) {
     .video-container{
         flex-direction: column;
-        padding: 1rem;
         border-radius: 0px;
     }   
     .video{
@@ -66,6 +60,7 @@
 @media screen and (max-width: 650px) {
     .video-container{
         border-radius: 5px;
+        padding: 0rem;
     }
     .video > div > div > iframe{
         min-height: 300px;

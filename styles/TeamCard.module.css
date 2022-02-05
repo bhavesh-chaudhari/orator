@@ -19,7 +19,6 @@
     transform-style: preserve-3d;
     transition: all 0.8s ease;
     padding-top: 1rem;
-    cursor: pointer;
 }
 
 .front{
@@ -71,7 +70,52 @@
     font-weight: 400;
 }
 
+.back h2{
+    transform: translate(0, -100%);
+}
+
+.back h4{
+    transform: translate(0, -160%);
+}
 
 .contact{
-    margin-top: 2rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0.7rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.links a:hover{
+    transform: scale(1.2);
+}
+
+.github-logo{
+    background: white;
+}
+
+.github-logo img{
+    transform: scale(0.8);
 }

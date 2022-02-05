@@ -8,6 +8,7 @@
 
 .team-container .heading{
     margin-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 .team-container .heading h1{
@@ -26,4 +27,13 @@
 
 .team-cards > div{
     margin: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .team-container{
+        padding: 4rem 0;
+    }
+    .team-cards{
+        width: 90%;
+    }   
 }

@@ -1,0 +1,109 @@
+.mic-on-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  flex-direction: column;
+  /* padding: 2rem; */
+}
+
+.mic-on-container > p {
+  background: red;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+
+.wrapper {
+  width: 60%;
+  min-width: 720px;
+}
+
+.wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.content > .wrapper:nth-child(1) {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto;
+  grid-gap: 2rem;
+  text-align: center;
+}
+
+.content .wrapper:nth-child(1) h3 {
+  grid-area: 1/1 / span 1 / span 2;
+  text-align: center;
+}
+
+.content > .wrapper:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: 2/1 / span 1 / span 1;
+}
+
+.content > .wrapper:nth-child(1) > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: 2/2 / span 1 / span 1;
+}
+
+.content > .wrapper:nth-child(1) > div:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: 3/1 / span 1 / span 1;
+}
+
+.content > .wrapper:nth-child(1) > div:nth-child(5) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: 3/2 / span 1 / span 1;
+}
+
+.participant .image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1rem;
+  /* overflow: hidden; */
+  background: white;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    min-width: 0px;
+    width: 95%;
+  }
+  .wrapper h3{
+      font-size: 1.2rem;
+  }
+  .participant .image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+}

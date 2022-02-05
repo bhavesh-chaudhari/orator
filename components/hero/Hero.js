@@ -42,6 +42,14 @@ const Hero = () => {
           layout="fill"
         />
       </Slider>
+      <div className={styles["curtains"]}>
+        <div className={styles["curtain"]}>
+
+        </div>
+        <div className={styles["curtain"]}>
+          
+        </div>
+      </div>
     </div>
   );
 };
