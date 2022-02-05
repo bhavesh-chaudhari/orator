@@ -135,7 +135,7 @@ const teamData = [
     id: 14,
     imagePath: "/images/team/shubhasriTadepalli.jpeg",
     name: "Shubhasri Tadepalli",
-    designation: "Social Media Outreach",
+    designation: "Design",
     email: "shubhasritadepalli@gmail.com",
     linkedinLink: "https://www.linkedin.com/in/shubhasri-tadepalli-458981204/",
     instagramLink: "https://www.instagram.com/shubha_sri_tadepalli",
