@@ -180,19 +180,15 @@ const Footer = () => {
               <span>Follow us on Twitter</span>
             </a>
           </div>
-          <div className={styles["link"]}>
+          <div className={styles["link"]} >
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://www.youtube.com/channel/UCKFC9VMpQlE6GcM7zz51MYg"
+              className={styles["mail-link"]}
+              href="mailto:orator@iiitn.ac.in"
             >
-              <Image
-                src="/logos/youtubeLogo.png"
-                width={30}
-                height={30}
-                alt="Youtube Logo"
-              ></Image>
-              <span>Subscribe us on YouTube</span>
+              <span>@</span>
+              <span>Write us on mail</span>
             </a>
           </div>
           <div className={styles["link"]}>
