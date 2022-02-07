@@ -4,6 +4,7 @@
   background: #060017;
   position: relative;
   min-height: 92vh;
+  cursor: grab;
 }
 
 .curtains {
@@ -14,6 +15,17 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
+  background-color: transparent;
+  z-index: 0;
+  animation: shorten 0.1s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+
+@keyframes shorten {
+  100%{
+    height: 0px;
+  }
 }
 
 .curtains > div:nth-child(1) {

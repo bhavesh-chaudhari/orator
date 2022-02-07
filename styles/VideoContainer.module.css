@@ -13,9 +13,11 @@
     min-height: 380px;
 }
 
-.video > div{
+.video > iframe{
     border-radius: 5px;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .details{
@@ -43,10 +45,8 @@
         margin-bottom: 1rem;
         min-height: 0px;
     }
-    .video > div{
+    .video > iframe{
         width: 100% !important;
-    }
-    .video > div > div > iframe{
         min-height: 400px;
     }
     .details{
@@ -63,7 +63,7 @@
         border-radius: 5px;
         padding: 0rem;
     }
-    .video > div > div > iframe{
+    .video iframe{
         min-height: 300px;
         border-radius: 5px;
     }

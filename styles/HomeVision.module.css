@@ -52,7 +52,7 @@
   justify-content: center;
   border-bottom-left-radius: 100px;
   background: white;
-  padding: 5rem 8rem;
+  padding: 6rem 8rem;
   width: 50%;
 }
 
@@ -85,6 +85,7 @@
 @media screen and (max-width: 950px) {
   .vision-mission-details {
     padding: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 
