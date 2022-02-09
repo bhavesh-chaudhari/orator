@@ -130,6 +130,8 @@ const teamData = [
     linkedinLink: "",
     instagramLink: "https://www.instagram.com/sunnyrdubey/",
     githubLink: "",
+    twitterLink:
+      "https://twitter.com/SunnyRDubey1?t=yNQXxfRbeRDw9yfPYmZgTA&s=08",
   },
   {
     id: 14,
