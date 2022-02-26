@@ -27,20 +27,29 @@ const Hero = () => {
   return (
     <div className={styles["hero-container"]}>
       <Slider {...settings}>
-        <Image src="/images/hero/hero3.png" alt="Orator Quiz on 21st Feb 2022" layout="fill" />
+        <Image
+          src="/images/hero/orator-elocution-battle.png"
+          alt="Elocution Battle"
+          layout="fill"
+        />
+        <Image
+          src="/images/hero/orator-quiz.png"
+          alt="Orator Quiz on 21st Feb 2022"
+          layout="fill"
+        />
         <Image
           src="/images/hero/hero0.png"
           alt="1 year of glory orator"
           layout="fill"
         />
         <Image
-          src="/images/hero/hero2.png"
-          alt="Orator Talk Shikha Mittal"
+          src="/images/hero/hero1.png"
+          alt="Orator Talk Harish Uthayamkumar"
           layout="fill"
         />
         <Image
-          src="/images/hero/hero1.png"
-          alt="Orator Talk Harish Uthayamkumar"
+          src="/images/hero/hero2.png"
+          alt="Orator Talk Shikha Mittal"
           layout="fill"
         />
       </Slider>
