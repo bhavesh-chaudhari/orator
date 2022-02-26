@@ -6,13 +6,13 @@
     background: linear-gradient(to bottom, #4B00E0 1.34%, #8E2DE2 99.39%);
     padding: 5px;
     height: 8vh;
-    min-height: 65px;
+    min-height: 68px;
     font-family: "Open Sans", sans-serif;
     position: fixed;
     width: 100%;
     top: 0;
     box-shadow: 0 8px 5px -8px #000;
-    max-height: 72px;
+    max-height: 74px;
 }
 
 .navbar{
